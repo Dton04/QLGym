@@ -1,0 +1,111 @@
+/* Container Styles */
+.checkin-container {
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Title Styles */
+.checkin-title {
+    font-size: 2.25rem;
+}
+
+@media (max-width: 576px) {
+    .checkin-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* Button Styles */
+.checkin-btn {
+    border-radius: 12px;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.checkin-btn.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.checkin-btn.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+@media (max-width: 576px) {
+    .checkin-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Card Styles */
+.checkin-card {
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.checkin-card:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+    .checkin-card .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Navigation Button Styles */
+.checkin-nav-btn {
+    border-radius: 8px;
+}
+
+/* Weekdays Styles */
+.checkin-weekdays {
+    font-size: 0.9rem;
+}
+
+/* Calendar Day Styles */
+.checkin-calendar {
+    margin-bottom: 0.5rem;
+}
+
+.checkin-day {
+    min-height: 32px;
+    font-size: 0.9rem;
+    cursor: default;
+    border-radius: 4px;
+    transition: all 0.2s;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkin-empty-day {
+    min-height: 32px;
+    border-radius: 4px;
+}
+
+@media (max-width: 576px) {
+    .checkin-day {
+        font-size: 0.8rem;
+        min-height: 28px;
+        padding: 1px 3px;
+    }
+
+    .checkin-empty-day {
+        min-height: 28px;
+    }
+
+    .row-cols-7 > .col {
+        padding: 0.1rem;
+    }
+}
+
+/* Badge Styles */
+.checkin-badge {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
